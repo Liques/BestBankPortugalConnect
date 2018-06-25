@@ -1,8 +1,9 @@
-using BancoBest.Tools;
+
+using BancoBestAPI.Tools;
 using System;
 using Xunit;
 
-namespace BancoBestAPI.xUnitTest
+namespace BestBankConnect.xUnitTest
 {
     public class AuthTest
     {

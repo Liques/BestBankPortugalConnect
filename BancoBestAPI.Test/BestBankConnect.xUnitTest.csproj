@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BancoBest.Auth\BancoBestAPI.Tools.csproj" />
-    <ProjectReference Include="..\BancoBestAPI\BancoBestAPI.csproj" />
+    <ProjectReference Include="..\BancoBest.Auth\BestBankConnect.Tools.csproj" />
+    <ProjectReference Include="..\BancoBestAPI\BestBankConnect.csproj" />
   </ItemGroup>
 
 </Project>

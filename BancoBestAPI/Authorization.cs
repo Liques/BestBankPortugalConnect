@@ -44,6 +44,8 @@ namespace BancoBestAPI
 
             RestRequest request = new RestRequest( Method.POST );
             client.Authenticator = new HttpBasicAuthenticator("OAuth", header);
+
+            return string.Empty;
         }
     }
 }

@@ -17,7 +17,7 @@ namespace BancoBestAPI
             throw new NotImplementedException();
         }
 
-        public static string (Application application)
+        public static string GetAccessToken(Application application)
         {
             throw new NotImplementedException();
         }
