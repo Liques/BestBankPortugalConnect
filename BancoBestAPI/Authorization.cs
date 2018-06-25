@@ -30,7 +30,7 @@ namespace BancoBestAPI
             var basestring = BaseString.Transform(oauthparameters);
             var signature = Signature.GetSignature(basestring, application.ConsumerSecret);
 
-            var header = String.Format(@"oauth_consumer_key={0},oauth_timestamp={1},oauth_version=1.0,redirect_uri=""{2}"",response_type = {3},scope = {4},state = {5},oauth_signature ={6}", 
+            var header = String.Format(@"OAuth oauth_consumer_key={0},oauth_timestamp={1},oauth_version=1.0,redirect_uri=""{2}"",response_type={3},scope={4},state={5},oauth_signature={6}", 
                 application.ConsumerKey, 
                 Timestamp.Now(), 
                 redirectUrl, 
@@ -43,7 +43,10 @@ namespace BancoBestAPI
             var client = new RestSharp.RestClient(Variables.UrlSandbox + Variables.EndpointInitiate);
 
             RestRequest request = new RestRequest( Method.POST );
-            client.Authenticator = new HttpBasicAuthenticator("OAuth", header);
+            client.AddDefaultHeader("Authorization", header);
+
+            var test = client.Execute(request);
+
 
             return string.Empty;
         }

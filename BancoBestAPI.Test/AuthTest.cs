@@ -1,4 +1,5 @@
 
+using BancoBestAPI;
 using BancoBestAPI.Tools;
 using System;
 using Xunit;
@@ -7,6 +8,10 @@ namespace BestBankConnect.xUnitTest
 {
     public class AuthTest
     {
+
+        string appConsumer = "";
+        string appSecret = "";
+
         [Fact]
         public void IsCorrectSignature()
         {
@@ -17,5 +22,25 @@ namespace BestBankConnect.xUnitTest
 
             Assert.Equal("A54c1HMRCQUdmkeTlvcCeQwEnlygDa2AVD7JbTO8uNo%3d", signature);
         }
+
+        
+
+        [Fact]
+        public void GetAuthURL()
+        {
+            //Assert.True(true);
+
+            var authorization = new Authorization(new Application
+            {
+                ConsumerKey = appConsumer,
+                ConsumerSecret = appSecret,
+                Environment = BancoBestAPI.Environment.Sandbox
+            });
+
+            var url = authorization.GetBankLoginUrl(@"http:\\www.httpbin.org\get");
+
+            Assert.Equal("A54c1HMRCQUdmkeTlvcCeQwEnlygDa2AVD7JbTO8uNo%3d", "signature");
+        }
+
     }
 }

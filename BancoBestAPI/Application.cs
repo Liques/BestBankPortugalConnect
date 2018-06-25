@@ -8,7 +8,7 @@ namespace BancoBestAPI
     {
         public string ConsumerKey { get; set; }
         public string ConsumerSecret { get; set; }
-        public string Environment { get; set; }
+        public Environment Environment { get; set; }
     }
 
     public enum Environment
