@@ -7,3 +7,4 @@ The ***Best Bank Portugal Connect*** is a C# library the helps to connect to the
 * Make transferences
 * Make payments via portuguese standarts.
 
+The library is still under development. No version released yet. If you want to participate, feel free!
