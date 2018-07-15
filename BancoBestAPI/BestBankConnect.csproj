@@ -2,15 +2,28 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Company />
+    <Product />
+    <Authors>Liques</Authors>
+    <Description>The Best Bank Portugal Connect is a open source C# library that helps to connect to the Best Bank's Open Banking PSD2 API, a bank based in Portugal. Features:
+-Authorization flow (OAuth 2)
+-Get Balances
+-Get Moviments
+-Make transferences
+-Make payments via portuguese standarts.</Description>
+    <PackageProjectUrl>https://github.com/Liques/BestBankPortugalConnect</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Liques/BestBankPortugalConnect</RepositoryUrl>
+    <Copyright>MIT</Copyright>
+    <PackageTags>best,bank,open,banking,api,sdk,portugal,psd2</PackageTags>
+    <PackageLicenseUrl>https://github.com/Liques/BestBankPortugalConnect/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageReleaseNotes>First version, added OAuth, Balance and Moviments</PackageReleaseNotes>
+    <PackageId>BestBankPortugalConnect</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="RestSharp" Version="106.3.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\BancoBest.Auth\BestBankConnect.Tools.csproj" />
   </ItemGroup>
 
 </Project>

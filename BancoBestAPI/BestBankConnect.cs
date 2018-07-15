@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using RestSharp;
+using System;
+using System.Collections.Generic;
 
-namespace BancoBestAPI
+namespace BestBankPortugalConnect
 {
     public class BancoBestAPI
     {
@@ -9,17 +12,60 @@ namespace BancoBestAPI
 
         public BancoBestAPI(User user, Application application)
         {
-
+            this.user = user;
+            this.application = application;
         }
 
-        public static string GetOAuthLoginUrl(Application application)
+        public IList<BalanceInformation> Balance()
         {
-            throw new NotImplementedException();
+            var header = Headers.Operation(application, user.AccessToken);
+
+            var client = new RestSharp.RestClient(application.ServerUrl + Variables.EndpointBalance);
+
+            RestRequest request = new RestRequest(Method.POST);
+            client.AddDefaultHeader("Authorization", header);
+
+            var response = client.Execute(request);
+
+            try
+            {
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    return JsonConvert.DeserializeObject<IList<BalanceInformation>>(response.Content);
+                }
+
+                throw new BestBankAPIException(response);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
-        public static string GetAccessToken(Application application)
+        public IList<Moviment> Moviments(string accountId)
         {
-            throw new NotImplementedException();
+            var header = Headers.Operation(application, user.AccessToken);
+
+            var client = new RestSharp.RestClient(application.ServerUrl + Variables.EndpointBalance + "/" + accountId);
+
+            RestRequest request = new RestRequest(Method.POST);
+            client.AddDefaultHeader("Authorization", header);
+
+            var response = client.Execute(request);
+
+            try
+            {
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    return JsonConvert.DeserializeObject<IList<Moviment>>(response.Content);
+                }
+
+                throw new BestBankAPIException(response);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
     }
 }

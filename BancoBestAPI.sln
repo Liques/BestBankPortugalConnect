@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestBankConnect", "BancoBes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestBankConnect.xUnitTest", "BancoBestAPI.Test\BestBankConnect.xUnitTest.csproj", "{A81B5E7D-E43A-4E8E-A8F6-FD9BEBB5E96F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestBankConnect.Tools", "BancoBest.Auth\BestBankConnect.Tools.csproj", "{DFCEDCF8-2588-47CE-9E92-ABDBC0DBD566}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{A81B5E7D-E43A-4E8E-A8F6-FD9BEBB5E96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A81B5E7D-E43A-4E8E-A8F6-FD9BEBB5E96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A81B5E7D-E43A-4E8E-A8F6-FD9BEBB5E96F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DFCEDCF8-2588-47CE-9E92-ABDBC0DBD566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFCEDCF8-2588-47CE-9E92-ABDBC0DBD566}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFCEDCF8-2588-47CE-9E92-ABDBC0DBD566}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFCEDCF8-2588-47CE-9E92-ABDBC0DBD566}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

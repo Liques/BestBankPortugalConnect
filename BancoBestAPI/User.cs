@@ -2,10 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BancoBestAPI
+namespace BestBankPortugalConnect
 {
     public class User
     {
-        public string AccessToken { get; set; }
+        private string accessToken;
+
+        public string AccessToken
+        {
+            get { return accessToken; }
+        }
+
+        public User(string accessToken)
+        {
+            this.accessToken = accessToken;
+        }
     }
 }
