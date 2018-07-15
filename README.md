@@ -15,15 +15,17 @@ This library helps to:
 
 The main entry point for the API is to create a valid `BestBankAPI` object:
 
-By default, without any options, Markdig is using the plain CommonMark parser:
-
 ```csharp
 
-var app = new Application(appConsumer, appSecret, Environment.Sandbox); // Set your application details
-var user = new User(accessToken); // Set the user Access Token (In this case this user already made the whole OAUth 2 previously)
+// Set your application details
+var app = new Application(appConsumer, appSecret, Environment.Sandbox); 
+// Set the user Access Token (In this case this user already made the whole OAUth 2 previously)
+var user = new User(accessToken); 
 
-var api = new BancoBestAPI(user, app); // Setup a BancoBestAPI object
-var balance = api.Balance(); // Get for example the account balance
+// Setup a BancoBestAPI object
+var api = new BancoBestAPI(user, app); 
+// Get for example the account balance
+var balance = api.Balance(); 
 ```
 
 ## Download
