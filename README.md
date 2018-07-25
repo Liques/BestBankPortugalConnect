@@ -30,7 +30,7 @@ var balance = api.Balance();
 
 #### Authorization flow
 
-This SDK also simplify the painful OAuth 2.0 authorization flow with [AuthorizationFlow](https://github.com/Liques/BestBankPortugalConnect/wiki/AuthorizationFlow) object:
+This SDK also simplify the painful OAuth 2.0 authorization flow with the [AuthorizationFlow](https://github.com/Liques/BestBankPortugalConnect/wiki/AuthorizationFlow) object:
 
 ```csharp
 
@@ -40,7 +40,7 @@ var url = AuthorizationFlow.GetBankLoginUrl(app,@"http:\\www.httpbin.org\get");
 // .... Wait the costumer back to the application ... //
 
 // Step 2: Gets the user Access Token based on a temporary code returned after the costumer authorization
-var accessToken = AuthorizationFlow.GetUserAccessToken(app, "5f7c768d060a43568779df1b86ffb407");
+var accessToken = AuthorizationFlow.GetUserAccessToken(app, temporaryCode);
 
 ```
 
