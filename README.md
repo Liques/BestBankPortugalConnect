@@ -5,11 +5,11 @@ With this SDK is possible to make **Android** and **iOS** applications using [Xa
 
 This library helps to:
 
-* Get bank accounts **balances**.
-* Get bank account and credit card **moviments**.
-* Make **transferences** between two bank accounts.
-* Make **payments**.
-* Authorization Flow (OAuth 2)
+* :euro: Get bank accounts **balances**.
+* :credit_card: Get bank account and credit card **moviments**.
+* :money_with_wings: Make **transferences** between two bank accounts.
+* :money_with_wings: Make **payments**.
+* :passport_control: Authorization Flow (OAuth 2)
 
 ## Usage
 
