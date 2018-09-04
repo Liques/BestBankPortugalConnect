@@ -19,6 +19,12 @@
     <PackageReleaseNotes>First version, added OAuth, Balance and Moviments</PackageReleaseNotes>
     <PackageId>BestBankPortugalConnect</PackageId>
     <Version>1.0.1</Version>
+    <AssemblyName>BestBankPortugalConnect</AssemblyName>
+    <RootNamespace>BestBankPortugalConnect</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\BestBankPortugalConnect.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

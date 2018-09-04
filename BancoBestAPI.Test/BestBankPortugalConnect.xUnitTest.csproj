@@ -4,6 +4,10 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <AssemblyName>BestBankPortugalConnect.xUnitTest</AssemblyName>
+
+    <RootNamespace>BestBankPortugalConnect.xUnitTest</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BancoBestAPI\BestBankConnect.csproj" />
+    <ProjectReference Include="..\BancoBestAPI\BestBankPortugalConnect.csproj" />
   </ItemGroup>
 
 </Project>
