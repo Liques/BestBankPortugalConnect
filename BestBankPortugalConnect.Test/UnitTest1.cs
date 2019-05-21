@@ -1,10 +1,8 @@
-
-using BestBankPortugalConnect;
 using BestBankPortugalConnect.Tools;
 using System;
 using Xunit;
 
-namespace BestBankPortugalConnect.xUnitTest
+namespace BestBankPortugalConnect.Test
 {
     public class MainTest
     {
@@ -24,14 +22,14 @@ namespace BestBankPortugalConnect.xUnitTest
             Assert.Equal("A54c1HMRCQUdmkeTlvcCeQwEnlygDa2AVD7JbTO8uNo%3d", signature);
         }
 
-        
+
 
         [Fact]
         public void GetAuthorizationURL()
         {
             var app = new Application(appConsumer, appSecret, Environment.Sandbox);
 
-            var url = AuthorizationFlow.GetBankLoginUrl(app,@"http:\\www.httpbin.org\get");
+            var url = AuthorizationFlow.GetBankLoginUrl(app, @"http:\\www.httpbin.org\get");
 
             Assert.StartsWith("http", url.AbsoluteUri);
         }
