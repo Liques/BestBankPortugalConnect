@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestBankPortugalConnect", "BancoBestAPI\BestBankPortugalConnect.csproj", "{C1026A68-4DA7-43DC-BA26-EE4230ACB3F7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestBankPortugalConnect.xUnitTest", "BancoBestAPI.Test\BestBankPortugalConnect.xUnitTest.csproj", "{A81B5E7D-E43A-4E8E-A8F6-FD9BEBB5E96F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleConsoleApp", "ExampleConsoleApp\ExampleConsoleApp.csproj", "{003999A2-9706-446D-B3EA-1F9F66B8B591}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleConsoleApp", "ExampleConsoleApp\ExampleConsoleApp.csproj", "{003999A2-9706-446D-B3EA-1F9F66B8B591}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestBankPortugalConnect.Test", "BestBankPortugalConnect.Test\BestBankPortugalConnect.Test.csproj", "{55CDAD2B-C62A-4E6F-8CB7-60BB7503CE37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{C1026A68-4DA7-43DC-BA26-EE4230ACB3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1026A68-4DA7-43DC-BA26-EE4230ACB3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1026A68-4DA7-43DC-BA26-EE4230ACB3F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A81B5E7D-E43A-4E8E-A8F6-FD9BEBB5E96F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A81B5E7D-E43A-4E8E-A8F6-FD9BEBB5E96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A81B5E7D-E43A-4E8E-A8F6-FD9BEBB5E96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A81B5E7D-E43A-4E8E-A8F6-FD9BEBB5E96F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{003999A2-9706-446D-B3EA-1F9F66B8B591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{003999A2-9706-446D-B3EA-1F9F66B8B591}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{003999A2-9706-446D-B3EA-1F9F66B8B591}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{003999A2-9706-446D-B3EA-1F9F66B8B591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55CDAD2B-C62A-4E6F-8CB7-60BB7503CE37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55CDAD2B-C62A-4E6F-8CB7-60BB7503CE37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55CDAD2B-C62A-4E6F-8CB7-60BB7503CE37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55CDAD2B-C62A-4E6F-8CB7-60BB7503CE37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
